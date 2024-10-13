@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>Music Player - Subhankar Rajbanshi</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-icons">
+        <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="circle"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+      <div class="song-image"></div>
+      <h1>Royalty</h1>
+      <p>Maestro Chives, Egzod, Neoni</p>
+      <audio id="song">
+        <source
+          src="./Maestro Chives, Egzod, Neoni - Royalty [NCS Release].mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <input type="range" value="0" id="progress" />
+      <div class="player-control">
+        <div class="circle"><i class="fa-solid fa-backward-step"></i></div>
+        <div class="circle play-button"><i class="fa-solid fa-play"></i></div>
+        <div class="circle"><i class="fa-solid fa-forward-step"></i></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
